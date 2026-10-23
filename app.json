@@ -1,0 +1,96 @@
+{
+  "name": "Content Saver & Forwarder Bot",
+  "description": "High-performance Telegram bot for managing, saving, and forwarding content with full forum topic support.",
+  "keywords": ["python3", "telegram", "telegram-bot", "pyrogram", "telethon", "content-saver"],
+  "env": {
+    "BOT_NAME": {
+      "description": "Display name of your bot",
+      "value": "Content Saver Bot",
+      "required": false
+    },
+    "DEVICE_MODEL": {
+      "description": "Device name shown in Telegram Active Sessions (Settings > Devices)",
+      "value": "ContentSaver Session",
+      "required": false
+    },
+    "API_ID": {
+      "description": "Telegram API ID from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from https://my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "MONGO_DB": {
+      "description": "MongoDB connection URL (e.g. mongodb+srv://...)",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Telegram user ID(s) of bot owner(s), space separated (e.g. 12345678 87654321)",
+      "value": "",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "Database name for MongoDB",
+      "value": "telegram_downloader",
+      "required": false
+    },
+    "STRING": {
+      "description": "Optional Telethon/Pyrogram premium session string for 4GB upload support",
+      "value": "",
+      "required": false
+    },
+    "FORCE_SUB": {
+      "description": "Channel ID (with -100 prefix) for mandatory join. Set 0 to disable.",
+      "value": "0",
+      "required": false
+    },
+    "LOG_GROUP": {
+      "description": "Channel or Group ID (with -100 prefix) for administrative logs. Set 0 to disable.",
+      "value": "0",
+      "required": false
+    },
+    "MASTER_KEY": {
+      "description": "Master key for AES session encryption (32 characters)",
+      "value": "gK8HzLfT9QpViJcYeB5wRa3DmN7P2xUq",
+      "required": false
+    },
+    "IV_KEY": {
+      "description": "IV key for AES session encryption (16 characters)",
+      "value": "s7Yx5CpVmE3F4012",
+      "required": false
+    },
+    "FREEMIUM_LIMIT": {
+      "description": "Batch processing limit for free users (0 for unlimited/default handling)",
+      "value": "0",
+      "required": false
+    },
+    "PREMIUM_LIMIT": {
+      "description": "Batch processing limit for premium users",
+      "value": "500",
+      "required": false
+    },
+    "ADMIN_CONTACT": {
+      "description": "Telegram contact link for support (e.g. https://t.me/YourSupport)",
+      "value": "https://t.me/",
+      "required": false
+    },
+    "JOIN_LINK": {
+      "description": "Public invite link for your updates channel",
+      "value": "https://t.me/",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ],
+  "stack": "container"
+}

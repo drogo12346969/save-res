@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - {{ bot_name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0e17;
+            color: #f9fafb;
+            padding: 3rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        h1 { margin-bottom: 1.5rem; font-size: 2rem; color: #fff; }
+        h2 { margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; color: #38bdf8; }
+        p { margin-bottom: 1rem; color: #9ca3af; }
+        a { color: #38bdf8; text-decoration: none; }
+        .back-link { display: inline-block; margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Home</a>
+    <h1>Terms of Service</h1>
+    <p>Last updated: October 2026</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing or using {{ bot_name }}, you agree to be bound by these Terms of Service. If you do not agree, do not use the service.</p>
+
+    <h2>2. Purpose and Fair Use</h2>
+    <p>{{ bot_name }} is provided strictly for personal archival, backup, and educational purposes. You are solely responsible for ensuring you have lawful access and necessary permissions to media and messages you download or clone.</p>
+
+    <h2>3. Prohibited Conduct</h2>
+    <p>You agree not to abuse the service, attempt unauthorized server intrusion, bypass rate limits, or distribute copyrighted materials in violation of applicable laws.</p>
+
+    <h2>4. Subscriptions and Payments</h2>
+    <p>Subscriptions provide enhanced quota limits and features. All subscription purchases are non-refundable once activated unless explicitly stated by the administrator.</p>
+
+    <h2>5. Disclaimer of Warranties</h2>
+    <p>The service is provided on an "as-is" and "as-available" basis. We make no warranty that the service will meet your requirements or be uninterrupted or error-free.</p>
+
+    <h2>6. Contact</h2>
+    <p>For questions or support, contact our administrator: <a href="{{ admin_contact }}">{{ admin_contact }}</a>.</p>
+</body>
+</html>

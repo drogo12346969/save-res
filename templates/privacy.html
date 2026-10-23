@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - {{ bot_name }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0e17;
+            color: #f9fafb;
+            padding: 3rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        h1 { margin-bottom: 1.5rem; font-size: 2rem; color: #fff; }
+        h2 { margin-top: 2rem; margin-bottom: 0.75rem; font-size: 1.25rem; color: #10b981; }
+        p { margin-bottom: 1rem; color: #9ca3af; }
+        a { color: #10b981; text-decoration: none; }
+        .back-link { display: inline-block; margin-bottom: 2rem; }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Home</a>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: October 2026</p>
+
+    <h2>1. Data Collection & Use</h2>
+    <p>We respect your privacy. {{ bot_name }} stores only minimal data required to provide its services, specifically:</p>
+    <ul>
+        <li>Your Telegram User ID and subscription status.</li>
+        <li>Your configured preferences (e.g. custom captions, thumbnails, destination chat ID).</li>
+        <li>User session strings, which are encrypted using AES-256-GCM encryption before storage.</li>
+    </ul>
+
+    <h2>2. Data Security & Encryption</h2>
+    <p>User sessions are encrypted on our servers using authenticated AES-GCM encryption. We do not sell, rent, or share personal information with third parties.</p>
+
+    <h2>3. Data Deletion and Session Termination</h2>
+    <p>You have full control over your session. Sending the <code>/logout</code> command instantly terminates the active Telegram session and removes your session credentials from the database.</p>
+
+    <h2>4. Contact & Inquiries</h2>
+    <p>If you have any questions regarding your data, contact our support: <a href="{{ admin_contact }}">{{ admin_contact }}</a>.</p>
+</body>
+</html>
